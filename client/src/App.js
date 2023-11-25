@@ -1,12 +1,17 @@
 import { EtHero, MuteIcon, UnMuteIcon } from "./img/imgAssets"
-import { useState } from "react"
+import { useState, useRef } from "react"
 
 function App() {
 
-  const [isMute, setIsMute] = useState(false)
+  const [isMute, setIsMute] = useState(true)
+  const [isAutoPlay, setIsAutoPlay] = useState(true)
+  const videoRef = useRef(null)
 
   const handleClick = () => {
     setIsMute(!isMute)
+    if (videoRef.current) {
+      videoRef.current.muted = !videoRef.current.muted
+    }
   }
 
   return (
@@ -34,18 +39,14 @@ function App() {
         
       <div id='LandingPage4 Big Div' className="relative overflow-hidden h-full">
         <video id='ETSVideo'
-          autoPlay
+          autoPlay={isAutoPlay}
           loop
           muted={isMute}
           className="w-full h-full object-cover"
           src={EtHero}
+          ref={videoRef}
         />
-        {/* Call to Action Button */}
-        {/* <div id='Get Started Btn Div' className="absolute right-12 top-24">
-          <button id='Get Started Btn' className="bg-transparent text-orange-600 text-xl font-semibold py-1 px-4 border border-gray-500 rounded-full">
-            Get Started
-          </button>
-        </div> */}
+        
       </div>
           
       </div>
