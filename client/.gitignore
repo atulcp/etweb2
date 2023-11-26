@@ -5,7 +5,7 @@
 /.pnp
 .pnp.js
 App-copy.js
-EtWeb1.mp4
+client/src/img/videos/EtWeb1.mp4
 
 # testing
 /coverage
