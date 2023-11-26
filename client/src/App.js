@@ -3,13 +3,10 @@ import { useState } from "react"
 
 function App() {
 
-  const [isMute, setIsMute] = useState(false)
+  const [isMute, setIsMute] = useState(true)
 
   const handleClick = () => {
     setIsMute(!isMute)
-    if (videoRef.current) {
-      videoRef.current.muted = !videoRef.current.muted
-    }
   }
 
   return (
@@ -38,12 +35,11 @@ function App() {
         
       <div id='LandingPage4 Big Div' className="relative overflow-hidden h-full">
         <video id='ETSVideo'
-          autoPlay={isAutoPlay}
+          autoPlay
           loop
           muted={isMute}
           className="w-full h-full object-cover"
           src={EtHero}
-          ref={videoRef}
         />
         {/* Call to Action Button */}
         {/* <div id='Get Started Btn Div' className="absolute right-12 top-24">
