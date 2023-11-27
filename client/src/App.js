@@ -1,13 +1,30 @@
-import { EtHero, EtLogo, MuteIcon, UnMuteIcon } from "./img/imgAssets"
-import { useState } from "react"
+import { EtHero, EtLogo, MuteIcon, UnMuteIcon } from "./assets/img/imgAssets"
+import { useState, useEffect, useCallback } from "react"
 
 function App() {
 
   const [isMute, setIsMute] = useState(true)
 
-  const handleClick = () => {
+  const handleClick = useCallback(() => {
     setIsMute(!isMute)
-  }
+  }, [isMute])
+
+  useEffect(() => {
+    // Function to handle keydown event
+    const handleKeyDown = (event) => {
+      if (event.key === 'm' || event.key === 'M') {
+        handleClick()
+      }
+    }
+
+    // Attach the event listener
+    window.addEventListener('keydown', handleKeyDown)
+
+    // Cleanup function to remove the event listener
+    return () => {
+      window.removeEventListener('keydown', handleKeyDown)
+    }
+  }, [isMute, handleClick]); 
 
   return (
     <div  className=" relative ">
@@ -17,8 +34,8 @@ function App() {
           {/* <p className="m-2 p-2 cursor-pointer">Home</p> */}
           <img src={EtLogo} alt="logo" className="h-9 w-18 cursor-pointer m-2 p-2" onClick={""} />
           <p className="m-2 p-2 cursor-pointer">About</p>
-          <p className="m-2 p-2 cursor-pointer">Trails</p>
-          <p className="m-2 p-2 cursor-pointer">Blogs</p>
+          <p className="m-2 p-2 cursor-pointer">Et Trails</p>
+          <p className="m-2 p-2 cursor-pointer">Et Logs</p>
           {/* <p className="m-2 p-2 cursor-pointer">Contact Us</p> */}
         </div>
 
@@ -41,12 +58,6 @@ function App() {
           className="w-full h-full object-cover"
           src={EtHero}
         />
-        {/* Call to Action Button */}
-        {/* <div id='Get Started Btn Div' className="absolute right-12 top-24">
-          <button id='Get Started Btn' className="bg-transparent text-orange-600 text-xl font-semibold py-1 px-4 border border-gray-500 rounded-full">
-            Get Started
-          </button>
-        </div> */}
       </div>
           
       </div>
