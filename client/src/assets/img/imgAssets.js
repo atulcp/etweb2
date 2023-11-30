@@ -7,6 +7,7 @@ import whoAreWeImg from './pics/whoAreWeImg.png'
 import trailsImg1 from './pics/trailsImg1.png'
 import blogsImg1 from './pics/blogsImg1.png'
 import getStartedImg1 from './pics/getStartedImg1.png'
+import etWayImg1 from './pics/etWayImg1.png'
 
 
 export {
@@ -19,4 +20,5 @@ export {
     trailsImg1,
     blogsImg1,
     getStartedImg1,
+    etWayImg1,
 }

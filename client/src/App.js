@@ -4,6 +4,7 @@ import EtWebAbout from './components/pages/EtWebAbout'
 import EtWebTrails from './components/pages/EtWebTrails'
 import EtWebGetStarted from './components/pages/EtWebGetStarted'
 import EtWebBlogsMain from "./components/pages/EtWebBlogsMain"
+import EtWebEtWay from './components/pages/EtWebEtWay'
 
 
 function App() {
@@ -14,6 +15,7 @@ return (
         <Route path="/" >
           <Route index element={<EtWebLanding />} />
           <Route path="about" element={ <EtWebAbout /> } />
+          <Route path="etway" element={ <EtWebEtWay /> } />
           <Route path="trails" element={ <EtWebTrails /> } />
           <Route path="blogs" element={ <EtWebBlogsMain /> } />
           <Route path="getstarted" element={ <EtWebGetStarted /> } />
