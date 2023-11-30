@@ -4,13 +4,23 @@ import {
     UnMuteIcon, 
 } from "../../../assets/img/imgAssets"
 
-import { useEffect } from "react"
+import { useEffect, useState } from "react"
 import { navMenuItems } from "../../../data/navMenuMainItems"
-import { useNavigate } from "react-router"
+import { useNavigate, useLocation } from "react-router"
 
 const EtNavbarTopMain = ( { isMute, onToggleMute }) => {
 
   const navigate = useNavigate()
+  const location = useLocation()
+  const [activeItem, setActiveItem] = useState(null)
+
+  // Update active item based on the current URL path
+  useEffect(() => {
+    const currentNavItem = navMenuItems.find(item => item.navUrl === location.pathname);
+    if (currentNavItem) {
+      setActiveItem(currentNavItem.item);
+    }
+  }, [location.pathname])
 
    useEffect(() => {
     // Function to handle keydown event
@@ -27,7 +37,12 @@ const EtNavbarTopMain = ( { isMute, onToggleMute }) => {
     return () => {
       window.removeEventListener('keydown', handleKeyDown)
     }
-  }, [onToggleMute]); 
+  }, [onToggleMute])
+
+  const handleItemClick = (item) => {
+    setActiveItem(item.item)
+    navigate(item.navUrl)
+  }
 
   return (
     <div id='Nav' className="absolute top-0 left-0 right-0 z-50 flex justify-between items-center p-5 bg-transparent text-white">
@@ -35,7 +50,7 @@ const EtNavbarTopMain = ( { isMute, onToggleMute }) => {
           <img src={EtLogo} alt="logo" className="h-9 w-18 cursor-pointer m-2 p-2" onClick={() => navigate("/")} />
           
           { navMenuItems.map((item, index) => (
-            <p key={index} className="m-2 p-2 cursor-pointer" onClick={() => navigate(item.navUrl)}>{item.item}</p>
+            <p key={index} className={`m-2 p-2 cursor-pointer ${activeItem === item.item ? 'border-b-4 border-orange-600' : ''}`} onClick={() => handleItemClick(item)}>{item.item}</p>
           ))}
           
         </div>
