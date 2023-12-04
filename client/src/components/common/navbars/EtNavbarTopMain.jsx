@@ -44,6 +44,8 @@ const EtNavbarTopMain = ( { isMute, onToggleMute }) => {
     navigate(item.navUrl)
   }
 
+  const isHomePage = location.pathname === '/'
+
   return (
     <div id='Nav' className="absolute top-0 left-0 right-0 z-50 flex justify-between items-center p-5 bg-transparent text-white">
         <div className="flex justify-start items-center">
@@ -62,7 +64,10 @@ const EtNavbarTopMain = ( { isMute, onToggleMute }) => {
           <button id='Get Started Btn' className="bg-transparent text-white mx-4 py-1 ">
             Sign In
           </button>
-          <img src={isMute ? MuteIcon : UnMuteIcon} alt="sound button" className="h-12 w-12 cursor-pointer m-2 p-2" onClick={onToggleMute} />
+          { isHomePage && (
+            <img src={isMute ? MuteIcon : UnMuteIcon} alt="sound button" className="h-12 w-12 cursor-pointer m-2 p-2" onClick={onToggleMute} />
+          ) }
+          
         </div>
       </div>
   )
