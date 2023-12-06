@@ -25,11 +25,11 @@ const EtWebAbout = () => {
           <h1 className="text-6xl text-orange-600 font-bold">Who are we?</h1>
 
           {/* Paragraph Text on the Right */}
-          <p className="max-w-sm h-full leading-relaxed text-white text-4xl text-center">
+          <p className="max-w-md h-full leading-relaxed text-white text-4xl">
             A team of{" "}
-            <span className="font-bold text-black text-6xl">mavericks</span> who
-            think they can help{" "}
-            <span className="font-bold text-black text-6xl">you</span>{" "}
+            <span className="font-extrabold text-orange-600 text-4xl">mavericks</span> who
+            can help{" "}
+            <span className="font-bold text-white text-6xl">you</span>{" "}
             <span className="text-orange-600 font-extrabold">reimagine</span>{" "}
             and <span className="text-orange-600 font-extrabold">realize</span>{" "}
             limitless growth possibilities!
@@ -137,25 +137,24 @@ const EtWebAbout = () => {
 
       {/* Section - Our Impact - Testimonials */}
       <div
-        className="bg-white p-10 min-h-screen relative"
+        className="bg-white p-10 min-h-screen"
         style={{
           backgroundImage: `url(${expImg1})`,
           backgroundSize: "cover",
           backgroundAttachment: "fixed",
         }}
       >
-        <div className='absolute top-0 transform translate-x-1/2'>
-          <h2 className="text-6xl font-bold mb-4 text-orange-600">
+        <div className=''>
+          <h2 className="text-6xl font-bold my-4 text-orange-600">
           Experiences we work for...</h2>
-        <div className="w-20 h-1 bg-gray-600" />
+        <div className=" w-20 h-1 bg-gray-600" />
         </div>
 
-          <div className='py-10 mx-auto h-full'>
-            <div className='grid grid-cols-2 gap-2'>
+          <div className='py-10 my-10 mx-auto h-full'>
+            <div className='grid gap-0 grid-cols-2 my-2 py-2'>
                 {testimonials.map((item, index) => (
-                  <div id={index} className='my-1 p-2 border-b border-slate-600 w-1/2'>
+                  <div id={index} className='my-1 p-4 w-5/6 mx-auto rounded border bg-black opacity-80'>
                     <p className='text-white text-xl p-2'><span className='text-2xl font-extrabold'>"</span>{item.comment}<span className='text-2xl font-extrabold'>"</span> </p>
-                    
                   </div>
                 ))} 
             </div>
