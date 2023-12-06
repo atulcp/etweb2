@@ -27,6 +27,8 @@ import bgImg3 from './pics/bgImg3.png'
 import bgImg4 from './pics/bgImg4.png'
 import bgImg5 from './pics/bgImg5.png'
 import bgImg6 from './pics/bgImg6.png'
+import bgImg7 from './pics/bgImg7.png'
+import bgImg8 from './pics/bgImg8.png'
 import expImg1 from './pics/expImg1.png'
 
 export {
@@ -59,5 +61,7 @@ export {
     bgImg4,
     bgImg5,
     bgImg6,
+    bgImg7,
+    bgImg8,
     expImg1,
 }

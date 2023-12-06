@@ -5,8 +5,8 @@ import {
   journeyImg1, 
   ceoImg2, 
   ceoImg3,
-  magnetsImg1,
-  expImg1 
+  bgImg8,
+  expImg1,
    } from '../../assets/img/imgAssets'
 
 import { aboutJourneyData } from '../../data/aboutData'
@@ -25,12 +25,12 @@ const EtWebAbout = () => {
           <h1 className="text-6xl text-orange-600 font-bold">Who are we?</h1>
 
           {/* Paragraph Text on the Right */}
-          <p className="max-w-md h-full leading-relaxed text-white text-4xl">
+          <p className="max-w-sm h-full leading-relaxed text-white text-4xl">
             A team of{" "}
-            <span className="font-extrabold text-orange-600 text-4xl">mavericks</span> who
+            <span className="font-extrabold text-black text-4xl">mavericks</span> who
             can help{" "}
             <span className="font-bold text-white text-6xl">you</span>{" "}
-            <span className="text-orange-600 font-extrabold">reimagine</span>{" "}
+            <span className="text-black font-extrabold">reimagine</span>{" "}
             and <span className="text-orange-600 font-extrabold">realize</span>{" "}
             limitless growth possibilities!
           </p>
@@ -166,7 +166,7 @@ const EtWebAbout = () => {
       <div
         className="bg-white p-10 h-screen"
         style={{
-          backgroundImage: `url(${magnetsImg1})`,
+          backgroundImage: `url(${bgImg8})`,
           backgroundSize: "cover",
           backgroundAttachment: "fixed",
         }}
