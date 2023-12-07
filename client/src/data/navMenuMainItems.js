@@ -1,7 +1,7 @@
 const navMenuItems = [
     // {item: 'Home', navUrl: "/"},
     {item: 'About', navUrl: "/about"},
-    // {item: 'Et Way', navUrl: "/etway"},
+    {item: 'Et Way', navUrl: "/etway"},
     {item: 'Trails', navUrl: "/trails"},
     {item: 'Blogs', navUrl: "/blogs"},  
 ]
