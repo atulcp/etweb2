@@ -1,4 +1,5 @@
 import EtHero from './videos/EtNoLogo.m4v'
+import EtUpcomingVid from './videos/upcomingDMO.mov'
 import MuteIcon from './pics/muteIcon.svg'
 import UnMuteIcon from './pics/unmuteIcon.svg'
 import EtLogo from './pics/etLogo.svg'
@@ -33,6 +34,7 @@ import expImg1 from './pics/expImg1.png'
 
 export {
     EtHero,
+    EtUpcomingVid,
     MuteIcon,
     UnMuteIcon,
     EtLogo,

@@ -45,6 +45,7 @@ const EtNavbarTopMain = ( { isMute, onToggleMute }) => {
   }
 
   const isHomePage = location.pathname === '/'
+  const isUpcomingPage = location.pathname === '/upcoming'
 
   return (
     <div id='Nav' className="absolute top-0 left-0 right-0 z-50 flex justify-between items-center p-5 bg-transparent text-white">
@@ -64,7 +65,7 @@ const EtNavbarTopMain = ( { isMute, onToggleMute }) => {
           <button id='Get Started Btn' className="bg-transparent text-white mx-4 py-1 ">
             Sign In
           </button>
-          { isHomePage && (
+          { (isHomePage || isUpcomingPage) && (
             <img src={isMute ? MuteIcon : UnMuteIcon} alt="sound button" className="h-12 w-12 cursor-pointer m-2 p-2" onClick={onToggleMute} />
           ) }
           
