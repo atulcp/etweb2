@@ -1,5 +1,5 @@
 import { 
-    EtLogo,
+    EtLogo2,
     MuteIcon, 
     UnMuteIcon, 
 } from "../../../assets/img/imgAssets"
@@ -13,6 +13,7 @@ const EtNavbarTopMain = ( { isMute, onToggleMute }) => {
   const navigate = useNavigate()
   const location = useLocation()
   const [activeItem, setActiveItem] = useState(null)
+  const [isTopOfPage, setIsTopOfPage] = useState(true)
 
   // Update active item based on the current URL path
   useEffect(() => {
@@ -39,18 +40,32 @@ const EtNavbarTopMain = ( { isMute, onToggleMute }) => {
     }
   }, [onToggleMute])
 
+  useEffect(() => {
+    const handleScroll = () => {
+      if(window.scrollY === 0 ) {
+        setIsTopOfPage(true);
+        }
+      if (window.scrollY !== 0 ) {
+        setIsTopOfPage(false);
+      }
+    }
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   const handleItemClick = (item) => {
     setActiveItem(item.item)
     navigate(item.navUrl)
+    window.scrollTo(0,0)
   }
 
   const isHomePage = location.pathname === '/'
   const isUpcomingPage = location.pathname === '/upcoming'
 
   return (
-    <div id='Nav' className="absolute top-0 left-0 right-0 z-50 flex justify-between items-center p-5 bg-transparent text-white">
+    <div id='Nav' className={`fixed top-0 left-0 right-0 z-50 flex justify-between items-center p-5 ${isTopOfPage ? 'bg-transparent' : 'bg-gradient-to-r from-black from-10% via-40% via-[#121B1F] to-black to-90% z-40' } text-white`}>
         <div className="flex justify-start items-center">
-          <img src={EtLogo} alt="logo" className="h-9 w-18 cursor-pointer m-2 p-2" onClick={() => navigate("/")} />
+          <img src={EtLogo2} alt="logo" className="h-9 w-18 cursor-pointer m-2 p-2" onClick={() => navigate("/")} />
           
           { navMenuItems.map((item, index) => (
             <p key={index} className={`m-2 p-2 cursor-pointer ${activeItem === item.item ? 'border-b-4 border-orange-600' : ''}`} onClick={() => handleItemClick(item)}>{item.item}</p>

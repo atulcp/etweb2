@@ -5,7 +5,7 @@ import {
   journeyImg1, 
   ceoImg2, 
   ceoImg3,
-  bgImg8,
+  personImg2,
   expImg1,
    } from '../../assets/img/imgAssets'
 
@@ -166,7 +166,7 @@ const EtWebAbout = () => {
       <div
         className="bg-white p-10 h-screen"
         style={{
-          backgroundImage: `url(${bgImg8})`,
+          backgroundImage: `url(${personImg2})`,
           backgroundSize: "cover",
           backgroundAttachment: "fixed",
         }}

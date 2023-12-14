@@ -3,6 +3,7 @@ import EtUpcomingVid from './videos/upcomingDMO.mov'
 import MuteIcon from './pics/muteIcon.svg'
 import UnMuteIcon from './pics/unmuteIcon.svg'
 import EtLogo from './pics/etLogo.svg'
+import EtLogo2 from './pics/etLogo2.svg'
 import pentacleImg from './pics/pentacleImg.png'
 import whoAreWeImg from './pics/whoAreWeImg.png'
 import trailsImg1 from './pics/trailsImg1.png'
@@ -31,6 +32,12 @@ import bgImg6 from './pics/bgImg6.png'
 import bgImg7 from './pics/bgImg7.png'
 import bgImg8 from './pics/bgImg8.png'
 import expImg1 from './pics/expImg1.png'
+import brainImg1 from './pics/brainImg1.png'
+import brainImg2 from './pics/brainImg2.png'
+import brainImg3 from './pics/brainImg3.png'
+import personImg1 from './pics/personImg1.png'
+import personImg2 from './pics/personImg2.png'
+import personImg3 from './pics/personImg3.png'
 
 export {
     EtHero,
@@ -38,6 +45,7 @@ export {
     MuteIcon,
     UnMuteIcon,
     EtLogo,
+    EtLogo2,
     pentacleImg,
     whoAreWeImg,
     trailsImg1,
@@ -66,4 +74,10 @@ export {
     bgImg7,
     bgImg8,
     expImg1,
+    brainImg1,
+    brainImg2,
+    brainImg3,
+    personImg1,
+    personImg2,
+    personImg3,
 }

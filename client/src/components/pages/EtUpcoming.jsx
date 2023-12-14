@@ -12,7 +12,7 @@ const EtUpcoming = () => {
   }, [])
 
   return (
-    <div  className="relative">
+    <div className="relative">
 
       <EtNavbarTopMain isMute={isMute} onToggleMute={toggleMute}/>
       <EtVideoPanelFull isMute={isMute} panelId={'Upcoming Landing Div'} videoId={'DMOVideo'} srcUrl={EtUpcomingVid} />
