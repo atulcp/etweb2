@@ -38,6 +38,9 @@ import brainImg3 from './pics/brainImg3.png'
 import personImg1 from './pics/personImg1.png'
 import personImg2 from './pics/personImg2.png'
 import personImg3 from './pics/personImg3.png'
+import bgNavImg1 from './pics/bgNavImg1.png'
+import bgNavImg2 from './pics/bgNavImg2.png'
+
 
 export {
     EtHero,
@@ -80,4 +83,6 @@ export {
     personImg1,
     personImg2,
     personImg3,
+    bgNavImg1,
+    bgNavImg2,
 }

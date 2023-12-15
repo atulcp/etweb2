@@ -89,8 +89,7 @@ const EtWebAbout = () => {
           create consistently outstanding growth for yourself and your
           organization by unlocking the{" "}
           <span className="text-orange-600 font-extrabold">99%</span> of your{" "}
-          <span className="text-orange-600 font-extrabold">untapped</span> and
-          wasted potential.
+          <span className="text-orange-600 font-extrabold">untapped</span> potential.
         </p>
       </div>
 

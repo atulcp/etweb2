@@ -7,10 +7,13 @@ import EtWebBlogsMain from "./components/pages/EtWebBlogsMain"
 import EtWebEtWay from './components/pages/EtWebEtWay'
 import EtUpcoming from './components/pages/EtUpcoming'
 
+// import Gradients from "./components/common/gradients/Gradients"
+
 
 function App() {
 
 return (
+  <>
   <BrowserRouter>
       <Routes>
         <Route path="/" >
@@ -25,7 +28,7 @@ return (
         </Route>
       </Routes>
     </BrowserRouter>
-  
+  </>
   )
 }
 

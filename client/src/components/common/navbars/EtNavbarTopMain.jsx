@@ -2,6 +2,7 @@ import {
     EtLogo2,
     MuteIcon, 
     UnMuteIcon, 
+    bgNavImg2,
 } from "../../../assets/img/imgAssets"
 
 import { useEffect, useState } from "react"
@@ -63,7 +64,9 @@ const EtNavbarTopMain = ( { isMute, onToggleMute }) => {
   const isUpcomingPage = location.pathname === '/upcoming'
 
   return (
-    <div id='Nav' className={`fixed top-0 left-0 right-0 z-50 flex justify-between items-center p-5 ${isTopOfPage ? 'bg-transparent' : 'bg-gradient-to-r from-black from-10% via-40% via-[#121B1F] to-black to-90% z-40' } text-white`}>
+    <div id='Nav' className={`fixed top-0 left-0 right-0 z-50 flex justify-between items-center p-5 ${isTopOfPage ? 'bg-transparent' : 'bg-fit' } text-white`}
+    style={isTopOfPage ? {} : { backgroundImage: `url(${bgNavImg2})` }}
+    >
         <div className="flex justify-start items-center">
           <img src={EtLogo2} alt="logo" className="h-9 w-18 cursor-pointer m-2 p-2" onClick={() => navigate("/")} />
           
