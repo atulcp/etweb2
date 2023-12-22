@@ -4,4 +4,13 @@
 @tailwind components;
 @tailwind utilities;
 
+/* In your CSS file */
+.carousel-container {
+  /* Add styling for your carousel container */
+}
+
+.testimonial-item {
+  /* Styling for each testimonial item */
+}
+  
 @import './custom-scrollbar.css';
