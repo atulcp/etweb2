@@ -40,6 +40,14 @@ import personImg2 from './pics/personImg2.png'
 import personImg3 from './pics/personImg3.png'
 import bgNavImg1 from './pics/bgNavImg1.png'
 import bgNavImg2 from './pics/bgNavImg2.png'
+import etValues1 from './pics/etValuesImg1.png'
+import etValues2 from './pics/etValuesImg2.png'
+import etValues3 from './pics/etValuesImg3.png'
+import etValues4 from './pics/etValuesImg4.png'
+import etValues5 from './pics/etValuesImg5.png'
+import etValues6 from './pics/etValuesImg6.png'
+import etValues7 from './pics/etValuesImg7.png'
+import etValuesImgHi1 from './pics/etValuesImgHi1.png'
 
 
 export {
@@ -85,4 +93,12 @@ export {
     personImg3,
     bgNavImg1,
     bgNavImg2,
+    etValues1,
+    etValues2,
+    etValues3,
+    etValues4,
+    etValues5,
+    etValues6,
+    etValues7,
+    etValuesImgHi1,
 }

@@ -9,6 +9,7 @@ module.exports = {
         inter: ["Inter", 'sans-serif'],
         poppins: ["Poppins", 'sans-serif'],
         oswald: ['Oswald', 'sans-serif'],
+        helvetica: ['Helvetica Neue','sans-serif' ]
       },
       colors: {
         "esc-dark-primary-100": "#E7E4F0",   

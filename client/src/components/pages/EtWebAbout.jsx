@@ -5,8 +5,8 @@ import {
   journeyImg1, 
   ceoImg2, 
   ceoImg3,
-  personImg2,
   expImg1,
+  etValues6,
    } from '../../assets/img/imgAssets'
 
 import { aboutJourneyData } from '../../data/aboutData'
@@ -163,18 +163,19 @@ const EtWebAbout = () => {
 
       {/* Section - Our Guiding Principles */}
       <div
-        className="bg-white p-10 h-screen"
+        className="bg-[#00030E] p-10 h-screen"
         style={{
-          backgroundImage: `url(${personImg2})`,
-          backgroundSize: "cover",
+          backgroundImage: `url(${etValues6})`,
+          backgroundSize: "90%",
+          backgroundRepeat: 'no-repeat',
           backgroundAttachment: "fixed",
+          backgroundPosition: 'center',
         }}
       >
-        <h2 className="text-6xl font-bold mb-4 text-orange-600">Our Approach</h2>
+        <h2 className="text-6xl font-bold mb-4 text-orange-600">Our Guiding Values</h2>
         <div className="w-20 h-1 bg-gray-600" />
-        <p className="text-white text-4xl max-w-md py-5 leading-relaxed">
-          Magnetization!
-        </p>
+        
+        
 
       </div>
     </div>
