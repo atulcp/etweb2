@@ -4,6 +4,7 @@ const navMenuItems = [
     // {item: 'Et Way', navUrl: "/etway"},
     {item: 'Trails', navUrl: "/trails"},
     {item: 'Blogs', navUrl: "/blogs"},  
+    {item: 'Upcoming', navUrl: "/upcoming"},  
 ]
 
 const aboutNavItems = [

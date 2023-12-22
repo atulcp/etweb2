@@ -1,7 +1,8 @@
 import { 
-    EtLogo,
+    EtLogo2,
     MuteIcon, 
     UnMuteIcon, 
+    bgNavImg2,
 } from "../../../assets/img/imgAssets"
 
 import { useEffect, useState } from "react"
@@ -13,6 +14,7 @@ const EtNavbarTopMain = ( { isMute, onToggleMute }) => {
   const navigate = useNavigate()
   const location = useLocation()
   const [activeItem, setActiveItem] = useState(null)
+  const [isTopOfPage, setIsTopOfPage] = useState(true)
 
   // Update active item based on the current URL path
   useEffect(() => {
@@ -39,12 +41,27 @@ const EtNavbarTopMain = ( { isMute, onToggleMute }) => {
     }
   }, [onToggleMute])
 
+  useEffect(() => {
+    const handleScroll = () => {
+      if(window.scrollY === 0 ) {
+        setIsTopOfPage(true);
+        }
+      if (window.scrollY !== 0 ) {
+        setIsTopOfPage(false);
+      }
+    }
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   const handleItemClick = (item) => {
     setActiveItem(item.item)
     navigate(item.navUrl)
+    window.scrollTo(0,0)
   }
 
   const isHomePage = location.pathname === '/'
+  const isUpcomingPage = location.pathname === '/upcoming'
 
   return (
     <div id='Nav' className="absolute top-0 left-0 right-0 z-50 flex justify-between items-center p-5 bg-transparent text-white">
