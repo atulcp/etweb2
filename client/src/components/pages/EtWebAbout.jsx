@@ -92,7 +92,7 @@ const EtWebAbout = () => {
           </motion.h1>
 
           <motion.p className="max-w-sm h-full leading-relaxed text-white text-4xl text-center" variants={fromTopVariant}>
-            A team of <span className="font-bold text-black text-6xl">mavericks</span> who think they can help <span className="font-bold text-black text-6xl">you</span> <span className="text-orange-600 font-extrabold">reimagine</span> and <span className="text-orange-600 font-extrabold">realize</span> limitless growth possibilities!
+            A team of <span className="font-bold text-black text-6xl">mavericks</span> who can help <span className="font-bold text-black text-6xl">you</span> <span className="text-orange-600 font-extrabold">reimagine</span> and <span className="text-orange-600 font-extrabold">realize</span> limitless growth possibilities!
           </motion.p>
         </div>
       </motion.div>
@@ -116,7 +116,7 @@ const EtWebAbout = () => {
         <motion.div variants={fromLeftVariant} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.95 }}>
           <h2 className="text-6xl font-bold mb-4 text-orange-600">What is our mission?</h2>
           <div className="w-20 h-1 bg-gray-600" />
-          <p className="text-white text-4xl max-w-md leading-relaxed py-5">To empower you to become a <span className="text-orange-600 font-extrabold">super CEO</span> and create consistently outstanding growth for yourself and your organization by unlocking the <span className="text-orange-600 font-extrabold">99%</span> of your <span className="text-orange-600 font-extrabold">untapped</span> and wasted potential.</p>
+          <p className="text-white text-4xl max-w-md leading-relaxed py-5">To empower you to become a <span className="text-orange-600 font-extrabold">super CEO</span> and create consistently outstanding growth for yourself and your organization by unlocking the <span className="text-orange-600 font-extrabold">99%</span> of your <span className="text-orange-600 font-extrabold">untapped</span> potential.</p>
         </motion.div>
       </div>
 
