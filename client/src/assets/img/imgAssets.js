@@ -31,6 +31,7 @@ import bgImg5 from './pics/bgImg5.png'
 import bgImg6 from './pics/bgImg6.png'
 import bgImg7 from './pics/bgImg7.png'
 import bgImg8 from './pics/bgImg8.png'
+import bgImg9 from './pics/bgImg9.png'
 import expImg1 from './pics/expImg1.png'
 import brainImg1 from './pics/brainImg1.png'
 import brainImg2 from './pics/brainImg2.png'
@@ -84,6 +85,7 @@ export {
     bgImg6,
     bgImg7,
     bgImg8,
+    bgImg9,
     expImg1,
     brainImg1,
     brainImg2,

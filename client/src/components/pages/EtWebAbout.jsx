@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import EtNavbarTopMain from '../common/navbars/EtNavbarTopMain';
-import { whoAreWeImg, journeyImg1, ceoImg2, ceoImg3, expImg1,etValues6 } from '../../assets/img/imgAssets';
+import { whoAreWeImg, journeyImg1, ceoImg2, ceoImg3, expImg1,etValues1, bgImg9 } from '../../assets/img/imgAssets';
 import { testimonials } from '../../data/testimonialsData';
 import { aboutJourneyData } from '../../data/aboutData'
+import { Roll } from 'react-swift-reveal';
 
 const fromBottomVariant = {
   hidden: { y: 50, opacity: 0 },
@@ -193,15 +194,25 @@ const EtWebAbout = () => {
       <div
         className="bg-[#00030E] p-10 h-screen"
         style={{
-          backgroundImage: `url(${etValues6})`,
-          backgroundSize: "90%",
+          backgroundImage: `url(${bgImg9})`,
+          backgroundSize: "100%",
           backgroundRepeat: 'no-repeat',
           backgroundAttachment: "fixed",
           backgroundPosition: 'center',
         }}
       >
-        <h2 className="text-6xl font-bold mb-4 text-orange-600">Our Guiding Values</h2>
-        <div className="w-20 h-1 bg-gray-600" />
+        <Roll right duration={3000} delay={100} forever={false}>
+          <h2 className="text-6xl text-center font-bold my-4 text-orange-600">Our Guiding Values</h2>
+          <div className="w-20 h-1 bg-gray-600 mx-auto" />
+        </Roll>
+        <Roll left duration={3000} delay={100} big={true}>
+            <img src={etValues1} alt="" className='mx-auto my-5 rounded-2xl shadow-slate-600 shadow-2xl z-40 h-3/4 w-1/2'/>
+        </Roll>
+        
+        
+
+
+
       </div>
     </div>
   );
