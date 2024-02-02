@@ -1,4 +1,5 @@
 import EtHero from './videos/EtNoLogo.m4v'
+import EtHero1 from './videos/Et1.mov'
 import EtUpcomingVid from './videos/upcomingDMO.mov'
 import MuteIcon from './pics/muteIcon.svg'
 import UnMuteIcon from './pics/unmuteIcon.svg'
@@ -49,10 +50,13 @@ import etValues5 from './pics/etValuesImg5.png'
 import etValues6 from './pics/etValuesImg6.png'
 import etValues7 from './pics/etValuesImg7.png'
 import etValuesImgHi1 from './pics/etValuesImgHi1.png'
+import etBlessOn1 from './pics/etBlessOn1.png'
+import etBlessOn2 from './pics/etBlessOn2.png'
 
 
 export {
     EtHero,
+    EtHero1,
     EtUpcomingVid,
     MuteIcon,
     UnMuteIcon,
@@ -103,4 +107,6 @@ export {
     etValues6,
     etValues7,
     etValuesImgHi1,
+    etBlessOn1,
+    etBlessOn2,
 }

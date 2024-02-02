@@ -36,11 +36,11 @@ const carouselVariant = {
   visible: { opacity: 1, x: 0, transition: { duration: 1 } }
 };
 
-const testimonialVariant = {
-  hover: { scale: 1.05, transition: { duration: 0.3 } },
-  initial: { opacity: 0.8 },
-  animate: { opacity: 1, transition: { duration: 1 } }
-};
+// const testimonialVariant = {
+//   hover: { scale: 1.05, transition: { duration: 0.3 } },
+//   initial: { opacity: 0.8 },
+//   animate: { opacity: 1, transition: { duration: 1 } }
+// };
 
 const EtWebAbout = () => {
   const [visibleTestimonials, setVisibleTestimonials] = useState([]);
