@@ -87,70 +87,83 @@ const EtWebAbout = () => {
         whileInView="visible"
         viewport={{ once: true }}
       >
-        <div className="flex flex-row items-center justify-between w-full px-20">
-          <motion.h1 className="text-6xl text-orange-600 font-bold" variants={fromBottomVariant}>
-            Who are we?
-          </motion.h1>
+        <div className="flex flex-row items-center justify-between w-full">
+  <motion.h1 className="text-6xl text-orange-600 font-bold mr-auto" variants={fromBottomVariant}>
+    Who are we?
+  </motion.h1>
 
-          <motion.p className="max-w-sm h-full leading-relaxed text-white text-4xl text-center" variants={fromTopVariant}>
-            A team of <span className="font-bold text-black text-6xl">mavericks</span> who can help <span className="font-bold text-black text-6xl">you</span> <span className="text-orange-600 font-extrabold">reimagine</span> and <span className="text-orange-600 font-extrabold">realize</span> limitless growth possibilities!
-          </motion.p>
-        </div>
+  <motion.p className="max-w-sm h-full leading-relaxed text-white text-4xl text-left ml-auto px-5" variants={fromTopVariant}>
+    A team of <span className="font-bold text-black text-4xl">mavericks</span> who can help <span className="font-bold text-black text-4xl">you</span> <span className="text-orange-600 font-extrabold">reimagine</span> and <span className="text-orange-600 font-extrabold">realize</span> limitless growth possibilities!
+  </motion.p>
+</div>
+
       </motion.div>
 
-      <div className="bg-white p-10 min-h-screen w-full" style={{ backgroundImage: `url(${ceoImg2})`, backgroundSize: "cover", backgroundAttachment: "fixed" }}>
-        <motion.div className="py-10" variants={fromRightVariant} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.95 }}>
-          <h1 className="text-5xl text-orange-600 font-bold text-right">Who are we serving?</h1>
+      <div className="bg-white p-10 bg-contain h-screen w-full flex flex-col justify-start items-end"
+     style={{ backgroundImage: `url(${ceoImg2})`,backgroundSize: "contain", backgroundAttachment: "fixed" }}>
+  <motion.div className="w-full" initial="hidden" animate="visible">
+    <motion.h1 className="text-5xl text-orange-600 font-bold text-right" variants={fromRightVariant}>
+      Who are we serving?
+    </motion.h1>
+  </motion.div>
 
-          <div className="relative">
-            <div className="absolute translate-y-2 right-24">
-              <p className="text-white text-8xl font-bold max-w-md leading-relaxed">You!</p>
+  <div className="w-1/3 flex flex-col justify-start space-y-4 mt-4">
+    <motion.p className="text-white text-8xl font-bold my-5 py-2 text-center" variants={fromRightVariant} initial="hidden" animate="visible">
+      You!
+    </motion.p>
+    <motion.p className="text-white text-2xl leading-relaxed text-left px-2" variants={fromRightVariant} initial="hidden" animate="visible">
+      A Technology services <span className="text-orange-600 font-extrabold">CEO</span> and your teams who are hungry to make a difference and are <span className="text-orange-600 font-extrabold">aspiring</span> to create a greater growth for yourself and your organization.
+    </motion.p>
+  </div>
+</div>
+
+
+
+
+<div className="bg-white p-10 h-screen" style={{ backgroundImage: `url(${ceoImg3})`, backgroundSize: "cover", backgroundAttachment: "fixed" }}>
+  <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.95 }}>
+    <motion.h2 variants={fromLeftVariant} className="text-6xl font-bold mb-4 text-orange-600">
+      What is our mission?
+    </motion.h2>
+    <div className="w-20 h-1 bg-gray-600" />
+    <motion.p variants={fromLeftVariant} className="text-white text-4xl max-w-md leading-relaxed py-5">
+      To empower you to become a <span className="text-orange-600 font-extrabold">super CEO</span> and create consistently outstanding growth for yourself and your organization by unlocking the <span className="text-orange-600 font-extrabold">99%</span> of your <span className="text-orange-600 font-extrabold">untapped</span> potential.
+    </motion.p>
+  </motion.div>
+</div>
+
+
+<div className="bg-white p-10 h-screen" style={{ backgroundImage: `url(${journeyImg1})`, backgroundSize: "cover", backgroundAttachment: "fixed" }}>
+  <motion.div variants={zoomInVariant} initial="hidden" whileInView="visible" viewport={{ once: true }}>
+    <h2 className="text-6xl font-bold mb-4 text-orange-600">Our Journey</h2>
+  </motion.div>
+
+  {/* Flex container to align items */}
+  <div className="flex flex-col md:flex-row items-center justify-center md:justify-between space-y-4 md:space-y-0">
+    <motion.div variants={zoomInVariant} initial="hidden" whileInView="visible" viewport={{ once: true }}>
+      <p className="text-white text-4xl max-w-md py-5 leading-relaxed">Helping tech services leaders and professionals to create and embark on a new journey of greater <span className="text-orange-600 font-extrabold">growth</span>, greater <span className="text-orange-600 font-extrabold">impacts</span> and greater <span className="text-orange-600 font-extrabold">experiences</span>.</p>
+    </motion.div>
+
+    <div className="flex  justify-center items-center">
+      {aboutJourneyData.map((item, index) => (
+        <div
+          key={index} // Use key instead of id for list items in React for better performance
+          className="w-32 m-1 p-1 rounded bg-transparent border border-gray-300"
+        >
+          <div className="flex flex-col justify-between items-center">
+            <img src={item.icon} className="w-12 h-12" alt="icon" />
+            <div className="h-[1px] w-10 bg-gray-400 my-2" />
+            <div className="flex flex-col items-center justify-center py-1">
+              <p className="font-bold text-white text-4xl">{item.head}</p>
+              <p className="text-xl text-orange-600 px-2">{item.desc}</p>
             </div>
-            <div className="absolute translate-y-40 right-0">
-              <p className="text-white text-3xl max-w-sm leading-relaxed text-center">A Technology services <span className="text-orange-600 font-extrabold">CEO</span> and your teams who are hungry to make a difference and are <span className="text-orange-600 font-extrabold">aspiring</span> to create greater growth.</p>
-            </div>
-          </div>
-        </motion.div>
-      </div>
-
-      <div className="bg-white p-10 h-screen" style={{ backgroundImage: `url(${ceoImg3})`, backgroundSize: "cover", backgroundAttachment: "fixed" }}>
-        <motion.div variants={fromLeftVariant} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.95 }}>
-          <h2 className="text-6xl font-bold mb-4 text-orange-600">What is our mission?</h2>
-          <div className="w-20 h-1 bg-gray-600" />
-          <p className="text-white text-4xl max-w-md leading-relaxed py-5">To empower you to become a <span className="text-orange-600 font-extrabold">super CEO</span> and create consistently outstanding growth for yourself and your organization by unlocking the <span className="text-orange-600 font-extrabold">99%</span> of your <span className="text-orange-600 font-extrabold">untapped</span> potential.</p>
-        </motion.div>
-      </div>
-
-      <div className="bg-white p-10 h-screen" style={{ backgroundImage: `url(${journeyImg1})`, backgroundSize: "cover", backgroundAttachment: "fixed" }}>
-        <motion.div variants={zoomInVariant} initial="hidden" whileInView="visible" viewport={{ once: true }}>
-          <h2 className="text-6xl font-bold mb-4 text-orange-600">Our Journey</h2>
-        </motion.div>
-        <motion.div variants={zoomInVariant} initial="hidden" whileInView="visible" viewport={{ once: true }}>
-          <p className="text-white text-4xl max-w-md py-5 leading-relaxed">Helping tech services leaders and professionals to create and embark on a new journey of greater <span className="text-orange-600 font-extrabold">growth</span>, greater <span className="text-orange-600 font-extrabold">impacts</span> and greater <span className="text-orange-600 font-extrabold">experiences</span>.</p>
-        </motion.div>
-
-        <div className="relative">
-          <div className="absolute -bottom-16 right-0 flex justify-between items-center">
-            {aboutJourneyData.map((item, index) => (
-              <div
-                id={index}
-                className="w-40 mr-[1px] p-2 rounded bg-transparent border border-gray-300"
-              >
-                <div className="flex flex-col justify-between items-center">
-                  <img src={item.icon} className="w-12 h-12" alt="icon" />
-                  <div className="h-[1px] w-10 bg-gray-400" />
-                  <div className="flex flex-col items-center justify-center py-1">
-                    <p className="font-bold text-white text-4xl">{item.head}</p>
-                    <p className="text-xl text-orange-600 px-2">{item.desc}</p>
-                  </div>
-                </div>
-              </div>
-            ))}
           </div>
         </div>
+      ))}
+    </div>
+  </div>
+</div>
 
-
-      </div>
 
       <div className="bg-white p-10 min-h-screen relative" style={{ backgroundImage: `url(${expImg1})`, backgroundSize: "cover", backgroundAttachment: "fixed" }}>
         <motion.div className='absolute top-0 left-0 right-0 flex justify-center' variants={carouselVariant} initial="hidden" whileInView="visible" viewport={{ once: true }}>
