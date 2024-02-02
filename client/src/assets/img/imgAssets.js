@@ -53,6 +53,9 @@ import etValues7 from './pics/etValuesImg7.png'
 import etValuesImgHi1 from './pics/etValuesImgHi1.png'
 import etBlessOn1 from './pics/etBlessOn1.png'
 import etBlessOn2 from './pics/etBlessOn2.png'
+import etBlessOn3 from './pics/etBlessOn3.png'
+import etBlessOnTxt from './pics/etBlessOnTxt.png'
+
 
 
 export {
@@ -111,4 +114,6 @@ export {
     etValuesImgHi1,
     etBlessOn1,
     etBlessOn2,
+    etBlessOn3,
+    etBlessOnTxt,
 }

@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import EtNavbarTopMain from '../common/navbars/EtNavbarTopMain';
-import { whoAreWeImg, journeyImg1, ceoImg2, ceoImg3, expImg1,etValues1, bgImg9 } from '../../assets/img/imgAssets';
+import { whoAreWeImg, journeyImg1, ceoImg2, ceoImg3, expImg1 } from '../../assets/img/imgAssets';
 import { testimonials } from '../../data/testimonialsData';
 import { aboutJourneyData } from '../../data/aboutData'
-import { Roll } from 'react-swift-reveal';
+import EtFooter from './EtFooter';
+// import { Roll } from 'react-swift-reveal';
 
 const fromBottomVariant = {
   hidden: { y: 50, opacity: 0 },
@@ -88,12 +89,12 @@ const EtWebAbout = () => {
         viewport={{ once: true }}
       >
         <div className="flex flex-row items-center justify-between w-full">
-  <motion.h1 className="text-6xl text-orange-600 font-bold mr-auto" variants={fromBottomVariant}>
+  <motion.h1 className="text-6xl text-orange-600 font-bold mr-auto ml-4" variants={fromBottomVariant}>
     Who are we?
   </motion.h1>
 
   <motion.p className="max-w-sm h-full leading-relaxed text-white text-4xl text-left ml-auto px-5" variants={fromTopVariant}>
-    A team of <span className="font-bold text-black text-4xl">mavericks</span> who can help <span className="font-bold text-black text-4xl">you</span> <span className="text-orange-600 font-extrabold">reimagine</span> and <span className="text-orange-600 font-extrabold">realize</span> limitless growth possibilities!
+    A team of <span className="font-bold text-orange-600 text-4xl">mavericks</span> who can help <span className="font-bold text-orange text-4xl">you</span> <span className="text-orange-600 font-extrabold">reimagine</span> and <span className="text-orange-600 font-extrabold">realize</span> limitless growth possibilities!
   </motion.p>
 </div>
 
@@ -177,7 +178,7 @@ const EtWebAbout = () => {
         <div className='py-20 mx-auto h-full'>
           <div className='grid grid-cols-1 md:grid-cols-3 md:grid-rows-2 gap-4'>
             <motion.div
-            className="p-4 bg-gradient-to-r from-gray-700 to-gray-900 rounded-lg shadow-2xl flex items-center justify-center h-48"
+            className="p-4 bg-gradient-to-r from-gray-700 to-gray-900 rounded-lg z-30 shadow-white shadow-2xl flex items-center justify-center h-64"
             animate={circlePath}
             transition={{ duration: 4, loop: Infinity, ease: "linear" }}
             >
@@ -185,7 +186,7 @@ const EtWebAbout = () => {
             </motion.div>
             
             <motion.div 
-            className='col-span-1 row-span-1 md:col-start-3 p-4 bg-gradient-to-r from-gray-700 to-gray-900 rounded-lg shadow-2xl transform hover:scale-105 transition duration-500 flex items-center justify-center h-48'
+            className='col-span-1 row-span-1 md:col-start-3 p-4 bg-gradient-to-r from-gray-700 to-gray-900 rounded-lg shadow-white z-30 shadow-2xl transform hover:scale-105 transition duration-500 flex items-center justify-center h-64'
             animate={circlePath}
             transition={{ duration: 4, loop: Infinity, ease: "linear" }}
             >
@@ -193,7 +194,7 @@ const EtWebAbout = () => {
             </motion.div>
 
             <motion.div 
-            className='mt-10 col-span-1 md:col-start-2 md:col-span-1 md:row-start-2 p-4 bg-gradient-to-r from-gray-700 to-gray-900 rounded-lg shadow-2xl transform hover:scale-105 transition duration-500 flex items-center justify-center h-48' 
+            className='mt-10 col-span-1 md:col-start-2 md:col-span-1 md:row-start-2 p-4 bg-gradient-to-r from-gray-700 to-gray-900 rounded-lg shadow-white z-30 shadow-2xl transform hover:scale-105 transition duration-500 flex items-center justify-center h-64' 
             animate={circlePath}
             transition={{ duration: 4, loop: Infinity, ease: "linear" }}
             >
@@ -204,29 +205,9 @@ const EtWebAbout = () => {
       </div>
 
      {/* Section - Our Guiding Principles */}
-      <div
-        className="bg-[#00030E] p-10 h-screen"
-        style={{
-          backgroundImage: `url(${bgImg9})`,
-          backgroundSize: "100%",
-          backgroundRepeat: 'no-repeat',
-          backgroundAttachment: "fixed",
-          backgroundPosition: 'center',
-        }}
-      >
-        <Roll right duration={3000} delay={100} forever={false}>
-          <h2 className="text-6xl text-center font-bold my-4 text-orange-600">Our Guiding Values</h2>
-          <div className="w-20 h-1 bg-gray-600 mx-auto" />
-        </Roll>
-        <Roll left duration={3000} delay={100} big={true}>
-            <img src={etValues1} alt="" className='mx-auto my-5 rounded-2xl shadow-slate-600 shadow-2xl z-40 h-3/4 w-1/2'/>
-        </Roll>
-        
-        
 
+     <EtFooter />
 
-
-      </div>
     </div>
   );
 };
