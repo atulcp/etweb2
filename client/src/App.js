@@ -6,6 +6,7 @@ import EtWebGetStarted from './components/pages/EtWebGetStarted'
 import EtWebBlogsMain from "./components/pages/EtWebBlogsMain"
 import EtWebEtWay from './components/pages/EtWebEtWay'
 import EtUpcoming from './components/pages/EtUpcoming'
+import EtBlessON from './components/pages/EtBlessON'
 
 
 function App() {
@@ -23,6 +24,7 @@ return (
           <Route path="blogs" element={ <EtWebBlogsMain /> } />
           <Route path="upcoming" element={ <EtUpcoming /> } />
           <Route path="getstarted" element={ <EtWebGetStarted /> } />
+          <Route path="blesson" element={ <EtBlessON /> } />
 
         </Route>
       </Routes>

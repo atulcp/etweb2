@@ -16,6 +16,7 @@ import ceoImg2 from './pics/ceoImg2.png'
 import ceoImg3 from './pics/ceoImg3.png'
 import journeyImg1 from './pics/journeyImg1.png'
 import experienceIcon1 from './pics/experienceIcon1.svg'
+import etON1 from './pics/etON1.svg'
 import growthIcon1 from './pics/growthIcon1.svg'
 import timeIcon1 from './pics/timeIcon1.svg'
 import sessionsIcon1 from './pics/sessionsIcon1.svg'
@@ -73,6 +74,7 @@ export {
     ceoImg3,
     journeyImg1,
     experienceIcon1,
+    etON1,
     growthIcon1,
     sessionsIcon1,
     timeIcon1,
