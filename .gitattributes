@@ -1,1 +1,2 @@
 client/src/img/videos/EtWeb1.mp4 filter=lfs diff=lfs merge=lfs -text
+client/src/assets/img/videos/Et1.mov filter=lfs diff=lfs merge=lfs -text
