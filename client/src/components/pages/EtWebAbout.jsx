@@ -99,8 +99,8 @@ const EtWebAbout = () => {
 
       </motion.div>
 
-      <div className="bg-white p-10 bg-contain h-screen w-full flex flex-col justify-start items-end"
-     style={{ backgroundImage: `url(${ceoImg2})`,backgroundSize: "contain", backgroundAttachment: "fixed" }}>
+      <div className="bg-white p-10  h-screen w-full flex flex-col justify-start items-end"
+     style={{ backgroundImage: `url(${ceoImg2})`,backgroundSize: "cover", backgroundAttachment: "fixed" }}>
   <motion.div className="w-full" initial="hidden" animate="visible">
     <motion.h1 className="text-5xl text-orange-600 font-bold text-right" variants={fromRightVariant}>
       Who are we serving?
