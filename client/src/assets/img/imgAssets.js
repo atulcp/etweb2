@@ -55,7 +55,17 @@ import etBlessOn1 from './pics/etBlessOn1.png'
 import etBlessOn2 from './pics/etBlessOn2.png'
 import etBlessOn3 from './pics/etBlessOn3.png'
 import etBlessOnTxt from './pics/etBlessOnTxt.png'
-
+import etBlogImg1 from './pics/blogs/etBlogImg1.png'
+import etBlogImg2 from './pics/blogs/etBlogImg2.png'
+import etBlogImg3 from './pics/blogs/etBlogImg3.png'
+import etBlogImg4 from './pics/blogs/etBlogImg4.png'
+import etBlogImg5 from './pics/blogs/etBlogImg5.png'
+import etBlogImg6 from './pics/blogs/etBlogImg6.png'
+import etBlogImg7 from './pics/blogs/etBlogImg7.png'
+import etBlogImg8 from './pics/blogs/etBlogImg8.png'
+import etTrailsImg1 from './pics/trails/etTrailsImg1.png'
+import etTrailsImg2 from './pics/trails/etTrailsImg2.png'
+import etTrailsImg3 from './pics/trails/etTrailsImg3.png'
 
 
 export {
@@ -116,4 +126,15 @@ export {
     etBlessOn2,
     etBlessOn3,
     etBlessOnTxt,
+    etBlogImg1,
+    etBlogImg2,
+    etBlogImg3,
+    etBlogImg4,
+    etBlogImg5,
+    etBlogImg6,
+    etBlogImg7,
+    etBlogImg8,
+    etTrailsImg1,
+    etTrailsImg2,
+    etTrailsImg3,
 }

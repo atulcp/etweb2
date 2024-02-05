@@ -118,9 +118,6 @@ const EtWebAbout = () => {
   </div>
 </div>
 
-
-
-
 <div className="bg-white p-10 h-screen" style={{ backgroundImage: `url(${ceoImg3})`, backgroundSize: "cover", backgroundAttachment: "fixed" }}>
   <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.95 }}>
     <motion.h2 variants={fromLeftVariant} className="text-6xl font-bold mb-4 text-orange-600">
@@ -132,7 +129,6 @@ const EtWebAbout = () => {
     </motion.p>
   </motion.div>
 </div>
-
 
 <div className="bg-white p-10 h-screen" style={{ backgroundImage: `url(${journeyImg1})`, backgroundSize: "cover", backgroundAttachment: "fixed" }}>
   <motion.div variants={zoomInVariant} initial="hidden" whileInView="visible" viewport={{ once: true }}>
@@ -164,7 +160,6 @@ const EtWebAbout = () => {
     </div>
   </div>
 </div>
-
 
       <div className="bg-white p-10 min-h-screen relative" style={{ backgroundImage: `url(${expImg1})`, backgroundSize: "cover", backgroundAttachment: "fixed" }}>
         <motion.div className='absolute top-0 left-0 right-0 flex justify-center' variants={carouselVariant} initial="hidden" whileInView="visible" viewport={{ once: true }}>

@@ -2,6 +2,7 @@ import { EtHero1 } from "../../assets/img/imgAssets"
 import { useState, useCallback } from "react"
 import EtNavbarTopMain from "../common/navbars/EtNavbarTopMain"
 import EtVideoPanelFull from "../common/media/EtVideoPanelFull"
+// import EtFooter from "./EtFooter"
 
 const EtWebLanding = () => {
 
@@ -12,12 +13,17 @@ const EtWebLanding = () => {
   }, [])
 
   return (
-    <div  className="relative">
+    <div className="flex flex-col">
+         <div  className="relative">
 
       <EtNavbarTopMain isMute={isMute} onToggleMute={toggleMute}/>
       <EtVideoPanelFull isMute={isMute} panelId={'LandingPage4 Big Div'} videoId={'ETSVideo'} srcUrl={EtHero1} />
+      
 
+      </div>
+      {/* <EtFooter /> */}
     </div>
+ 
   )
 }
 
