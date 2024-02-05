@@ -16,7 +16,7 @@ const EtWebTrails = () => {
         <div className="bg-slate-900 bg-opacity-30 rounded-xl">
           <p className="text-4xl text-gray-300 leading-relaxed max-w-md p-4 m-4 text-center">
             A journey of{" "}
-            <span className="text-orange-600 font-bold">limitless</span> possibilities begins by taking the first step!
+            <span className="text-orange-600 font-bold">limitless</span> possibilities begins by defining the purpose and then taking the first step. Let us show you some pathways for you to consider.
           </p>
         </div>
       
