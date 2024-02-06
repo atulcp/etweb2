@@ -16,7 +16,12 @@ const aboutNavItems = [
     {item: 'Contact Us', navUrl: '/about/contactus'},
 ]
 
+const blogDetailNavItems = [
+    {item: 'Back to Blogs'}
+]
+
 export {
     navMenuItems,
     aboutNavItems,
+    blogDetailNavItems,
 }

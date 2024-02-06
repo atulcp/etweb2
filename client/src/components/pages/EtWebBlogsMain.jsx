@@ -16,8 +16,8 @@ const EtWebBlogsMain = () => {
         className="relative h-screen flex items-center justify-center bg-scroll bg-cover bg-blend-screen"
         style={{ backgroundImage: `url(${blogsImg1})` }}
       >
-        <div className="bg-black bg-opacity-30 rounded-xl">
-          <p className="text-4xl text-white leading-relaxed max-w-md p-4 m-4 text-center">
+        <div className="bg-black bg-opacity-30 rounded-xl p-2 m-4">
+          <p className="text-4xl text-white leading-relaxed p-4 m-4 text-center">
             We are only as{" "}
             <span className="text-orange-600 font-bold">imaginative</span> as
             the kind of thoughts we nurture inside us!

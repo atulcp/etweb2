@@ -11,7 +11,7 @@ import
 
 } from "../assets/img/imgAssets" 
 
-const categories = ['All', 'Technology', 'Life', 'Health', 'Leadership']
+const categories = ['All', 'Technology', 'Life', 'Health', 'Leadership','Et Foundation']
 
 const blogsData = [
     { 
@@ -91,6 +91,16 @@ const blogsData = [
         title: 'The Thought Leverage', 
         image: etBlogImg8, 
         narrative: 'How can you systematically develop thought leadership?', 
+        author: 'Atul Pandey', 
+        date: 'Feb 1, 2024', 
+        stats: { views: 150, likes: 30, comments: 28 } 
+    },
+    { 
+        id: 9, 
+        category: 'Et Foundation', 
+        title: 'The Battle of Two Forces', 
+        image: etBlogImg8, 
+        narrative: 'As you may be settling down back into your professional and personal worlds post your “Realize the Possible” intervention sessions, I would like us to start dwelling and building further on a few core aspects (we initiated in the sessions and 1:1 discussions) to set in your orientations and reflected in your actions in the engagements ahead. You may want to use these aspects as means to strengthen your DISPASSION leading to higher states of AWARENESS to drive more meaningful and more impactful ACTIONs.', 
         author: 'Atul Pandey', 
         date: 'Feb 1, 2024', 
         stats: { views: 150, likes: 30, comments: 28 } 

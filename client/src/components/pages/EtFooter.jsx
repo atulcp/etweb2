@@ -3,7 +3,7 @@ import { footerData } from '../../data/footerData'
 
 const EtFooter = () => {
       return (
-        <footer className="bg-black text-white py-10 ">
+        <footer className="bg-black text-white py-10 pl-10">
           <div className="max-w-6xl mx-auto px-4">
             <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-10">
                 {  
